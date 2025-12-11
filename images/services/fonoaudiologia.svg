@@ -1,0 +1,9 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Oreja -->
+  <path d="M24 16C16 16 12 24 12 32C12 42 18 50 26 50C30 50 32 46 32 42V38C32 36 30 34 28 34C26 34 24 36 24 38" stroke="#4A90A4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M24 16C28 16 32 20 32 26" stroke="#4A90A4" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Ondas de sonido (Auditivo/Habla) -->
+  <path d="M42 22C46 26 46 38 42 42" stroke="#F4A261" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 16C56 22 56 42 50 48" stroke="#F4A261" stroke-width="4" stroke-linecap="round"/>
+</svg>

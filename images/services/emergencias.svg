@@ -1,0 +1,18 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cuerpo de la ambulancia -->
+  <path d="M8 32H12V42H52V24L42 16H8V32Z" stroke="#4A90A4" stroke-width="4" stroke-linejoin="round"/>
+  
+  <!-- Ventana -->
+  <path d="M42 24H52V24L42 16V24Z" fill="#4A90A4" stroke="#4A90A4" stroke-width="2"/>
+  
+  <!-- Ruedas -->
+  <circle cx="16" cy="42" r="5" fill="white" stroke="#4A90A4" stroke-width="4"/>
+  <circle cx="46" cy="42" r="5" fill="white" stroke="#4A90A4" stroke-width="4"/>
+  
+  <!-- Cruz en el costado (Bajada 3px para centrar mejor visualmente) -->
+  <path d="M24 29H34" stroke="#F4A261" stroke-width="4" stroke-linecap="round"/>
+  <path d="M29 24V34" stroke="#F4A261" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Luz sirena -->
+  <path d="M16 16H24" stroke="#F4A261" stroke-width="4" stroke-linecap="round"/>
+</svg>

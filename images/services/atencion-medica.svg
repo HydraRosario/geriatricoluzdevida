@@ -1,0 +1,11 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Asa del botiquín -->
+  <path d="M22 14C22 11.7909 23.7909 10 26 10H38C40.2091 10 42 11.7909 42 14V18H22V14Z" stroke="#4A90A4" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Cuerpo del botiquín -->
+  <rect x="10" y="18" width="44" height="36" rx="4" fill="white" stroke="#4A90A4" stroke-width="4"/>
+  
+  <!-- Cruz médica -->
+  <path d="M32 26V46" stroke="#F4A261" stroke-width="6" stroke-linecap="round"/>
+  <path d="M22 36H42" stroke="#F4A261" stroke-width="6" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Paciente (Acostado/Estirando) -->
+  <circle cx="20" cy="24" r="5" stroke="#4A90A4" stroke-width="3"/>
+  <path d="M20 29V44H32" stroke="#4A90A4" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> <!-- Cuerpo y pierna -->
+  <path d="M32 44L42 34" stroke="#4A90A4" stroke-width="3" stroke-linecap="round"/> <!-- Pierna estirada -->
+  
+  <!-- Terapeuta (Ayudando) -->
+  <circle cx="48" cy="20" r="5" stroke="#F4A261" stroke-width="3"/>
+  <path d="M48 25V38" stroke="#F4A261" stroke-width="3" stroke-linecap="round"/> <!-- Cuerpo -->
+  <path d="M48 38L42 50" stroke="#F4A261" stroke-width="3" stroke-linecap="round"/> <!-- Pierna -->
+  <path d="M48 38L54 50" stroke="#F4A261" stroke-width="3" stroke-linecap="round"/> <!-- Pierna -->
+  <path d="M48 28L40 36" stroke="#F4A261" stroke-width="3" stroke-linecap="round"/> <!-- Brazo ayudando -->
+</svg>

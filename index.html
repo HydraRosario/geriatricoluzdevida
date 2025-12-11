@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Geriátrico Luz de Vida - Atención integral y profesional para adultos mayores. Servicios de enfermería, fisioterapia, nutrición y más.">
+    <meta name="keywords" content="geriátrico, residencia, adultos mayores, cuidado de ancianos, enfermería">
+    <meta name="author" content="Luz de Vida">
+
+    <title>Luz de Vida – Geriátrico</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo/favicon.svg">
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="preload" href="images/logo/logo-geriatrico.svg" as="image">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Swiper CSS (Slider profesional) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- AOS CSS (Animaciones on scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Skip to main content (Accesibilidad) -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#top">
+                        <img src="images/logo/logo-geriatrico.svg" alt="Luz de Vida - Geriátrico" id="logo-img">
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="main-nav" id="main-nav" aria-label="Navegación principal">
+                    <ul class="nav-menu">
+                        <!-- <li><a href="#inicio" class="nav-link active">Inicio</a></li> -->
+                        <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
+                        <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                        <li><a href="#confort" class="nav-link">Confort</a></li>
+                        <li><a href="#galeria" class="nav-link">Galería</a></li>
+                        <li><a href="#toma-decision" class="nav-link">Toma de Decisión</a></li>
+                        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menú">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main">
+
+        <!-- Hero Slider Section -->
+        <section id="inicio" class="hero-slider">
+            <div class="slider-container">
+                <div class="slide active" style="background-image: url('images/slider/slide-1-real.png')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">Comodidad y Confort</h1>
+                        <p class="slide-subtitle">Un lugar especial para el adulto mayor</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/slider/slide-2-real.png')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">Espacios para Disfrutar</h1>
+                        <p class="slide-subtitle">Instalaciones diseñadas para su bienestar</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/slider/slide-3-real.png')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">Actividades Especiales</h1>
+                        <p class="slide-subtitle">Recreación y terapias personalizadas</p>
+                    </div>
+                </div>
+                <div class="slide" style="background-image: url('images/slider/slide-4-real.png')">
+                    <div class="slide-overlay"></div>
+                    <div class="slide-content">
+                        <h1 class="slide-title">La Comodidad de su Hogar</h1>
+                        <p class="slide-subtitle">Atención profesional las 24 horas</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slider Indicators -->
+
+            <!-- Slider Indicators -->
+            <div class="slider-indicators" id="slider-indicators"></div>
+        </section>
+
+        <!-- Quiénes Somos Section -->
+        <section id="quienes-somos" class="section quienes-somos">
+            <div class="container">
+                <div class="section-grid">
+                    <div class="section-content" data-aos="fade-right">
+                        <h2 class="section-title small-title">Geriátrico «Luz de Vida»</h2>
+                        <div class="title-separator"></div>
+                        <p class="section-text">
+                            El adulto mayor tiene ahora un lugar muy especial. Enclavado en un bellísimo paisaje
+                            serrano,
+                            nuestras instalaciones cuentan con servicios diferenciales, equipados para que usted se
+                            sienta
+                            como en la comodidad de su hogar.
+                        </p>
+                        <a href="#galeria" class="btn btn-primary">Conoce nuestras instalaciones</a>
+                    </div>
+                    <div class="section-image" data-aos="fade-left">
+                        <img src="images/general/quienes-somos.jpg" alt="Adultos mayores felices" loading="lazy"
+                            decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios" class="section-servicios-wrapper">
+            <!-- Parte Superior: Fondo + Texto Intro -->
+            <div class="servicios-intro">
+                <div class="section-overlay"></div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title centered text-white">Nuestros Servicios</h2>
+                        <div class="title-separator centered"></div>
+                        <p class="section-intro text-white">
+                            Nuestro Centro nace con la idea de crear un nuevo concepto en lo que a la atención de
+                            nuestros
+                            mayores se refiere, cuyo objetivo principal es la plena integración de los residentes en su
+                            nuevo hogar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parte Inferior: Grid de Iconos (Sin fondo de imagen) -->
+            <div class="servicios-grid-container section">
+                <div class="container">
+                    <div class="services-grid">
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-icon">
+                                <i data-lucide="stethoscope"></i>
+                            </div>
+                            <h3 class="service-title">Atención médica</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-icon">
+                                <i data-lucide="heart-pulse"></i>
+                            </div>
+                            <h3 class="service-title">Enfermería</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-icon">
+                                <i data-lucide="ambulance"></i>
+                            </div>
+                            <h3 class="service-title">Emergencias</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="service-icon">
+                                <i data-lucide="activity"></i>
+                            </div>
+                            <h3 class="service-title">Fisioterapia</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-icon">
+                                <i data-lucide="ear"></i>
+                            </div>
+                            <h3 class="service-title">Fonoaudiología</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-icon">
+                                <i data-lucide="palette"></i>
+                            </div>
+                            <h3 class="service-title">Terapia ocupacional</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="150">
+                            <div class="service-icon">
+                                <i data-lucide="apple"></i>
+                            </div>
+                            <h3 class="service-title">Nutrición</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-icon">
+                                <i data-lucide="users"></i>
+                            </div>
+                            <h3 class="service-title">Psicología</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="250">
+                            <div class="service-icon">
+                                <i data-lucide="scissors"></i>
+                            </div>
+                            <h3 class="service-title">Peluquería - Manicura</h3>
+                        </div>
+
+                        <div class="service-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-icon">
+                                <i data-lucide="dumbbell"></i>
+                            </div>
+                            <h3 class="service-title">Prof. Educación física</h3>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Confort Section -->
+        <section id="confort" class="section-confort-wrapper">
+            <!-- Parte Superior: Fondo + Texto Intro -->
+            <div class="confort-intro">
+                <div class="section-overlay"></div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title centered text-white">Confort</h2>
+                        <div class="title-separator centered"></div>
+                        <p class="section-intro text-white">
+                            Enclavado en un bellísimo paisaje y con servicios diferenciales que lo harán el ser más
+                            importante, que es usted.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parte Inferior: Grid de Confort (Fondo plano) -->
+            <div class="confort-content section">
+                <div class="container">
+                    <div class="confort-grid">
+                        <div class="confort-column">
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Habitaciones totalmente equipadas</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>6 Comidas diarias</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Servicio de lavandería</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Calefacción central</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Peluquería, Manicura y Pedicura</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Televisión 42" con cable</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>WiFi en toda la instalación</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Pileta de natación</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Profesora de canto</h3>
+                            </div>
+                            <div class="confort-item">
+                                <span class="confort-icon">✓</span>
+                                <h3>Espacio y personal de recreación</h3>
+                            </div>
+                        </div>
+                        <div class="confort-image">
+                            <img src="images/general/confort-instalaciones.jpg" alt="Instalaciones" loading="lazy"
+                                decoding="async">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galería Section -->
+        <section id="galeria" class="section galeria">
+            <div class="container">
+                <!-- <h2 class="section-title centered">Nuestras Instalaciones</h2>
+                <div class="title-separator centered"></div> -->
+
+                <div class="gallery-grid" id="gallery-grid">
+                    <!-- Las imágenes se cargarán dinámicamente desde la carpeta images/gallery -->
+                </div>
+
+                <button class="btn btn-secondary" id="load-more-btn">Cargar más</button>
+            </div>
+        </section>
+
+        <!-- Toma de Decisión Section -->
+        <!-- Toma de Decisión Section -->
+        <section id="toma-decision" class="section-decision-wrapper">
+            <!-- Parte Superior: Fondo Parallax + Título/Imagen -->
+            <div class="decision-intro">
+                <div class="section-overlay"></div>
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title centered text-white">Toma de decisión</h2>
+                        <div class="title-separator centered"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parte Inferior: Texto principal (Fondo blanco) -->
+            <div class="decision-body section">
+                <div class="container">
+                    <div class="decision-content">
+                        <div class="decision-column">
+                            <p>
+                                La decisión de llevar a un hogar externo a un ser querido depende de múltiples factores.
+                                Puede tener demencia (un conjunto de síntomas que afectan diferentes aspectos de las
+                                funciones
+                                intelectuales (memoria, lenguaje, cálculo, razonamiento, etc.) que es de carácter
+                                progresivo
+                                y de una severidad tal que altera el normal funcionamiento de la persona.
+                            </p>
+                            <p>
+                                Puede que necesite cuidados porque tiene alguna otra enfermedad como diabetes,
+                                parkinson,
+                                que haya estado internado y que necesite mayores cuidados. O simplemente porque está
+                                sola
+                                y su edad es muy avanzada, por lo tanto tiene diferentes dificultades para su propio
+                                cuidado.
+                            </p>
+                            <p>
+                                Hay casos en los que la necesidad de cuidados supera las posibilidades de las personas
+                                que
+                                lo rodean, otras veces tienen determinados problemas de conducta que dificultan mucho la
+                                convivencia (por ejemplo, trastornos severos del sueño), a veces es imposible que algún
+                                familiar se encargue, o existen otros problemas que hacen que no pueda recibir los
+                                cuidados
+                                necesarios.
+                            </p>
+                            <p>
+                                El llevar a un hogar a un ser querido no debe ser vivido como un fracaso en los cuidados
+                                brindados o como una circunstancia negativa. A veces, esta decisión genera fuertes
+                                sentimientos
+                                de culpa, sin embargo el aumento y complejización del tipo de atención que requiere la
+                                persona
+                                mayor y muchas veces enfermo demuestra que no deberíamos sentirnos así. Por el
+                                contrario,
+                                nos permite ofrecerle al ser querido todo el cuidado necesario.
+                            </p>
+                        </div>
+
+                        <div class="decision-column">
+                            <p>
+                                Tomar decisiones es una tarea difícil. En muchas ocasiones puede generar discusiones y
+                                diferencias entre los familiares, ya que los sentimientos que se ponen en juego son
+                                muchos
+                                y complejos. Sin embargo, en algún momento será necesario tomarlas, y hacerlo con tiempo
+                                será positivo para todos.
+                            </p>
+                            <p>
+                                Anticiparse a los problemas que puedan surgir es una estrategia que ayuda tanto a cuidar
+                                mejor al enfermo como a quienes cuidan de él. Es necesario contar con la información
+                                necesaria.
+                                Es bueno tener la opinión del médico que siempre lo atiende.
+                            </p>
+                            <p>
+                                Cuando hay que tomar una decisión es importante que toda la familia hable sobre el tema
+                                y
+                                que esto se haga, en la medida de lo posible con tiempo. Esto permitirá retomar la
+                                conversación
+                                en más de una oportunidad y permitir que cada uno piense tranquilamente y a solas antes
+                                de
+                                volver a hablar.
+                            </p>
+                            <p>
+                                Siempre es bueno tener presente que, ante muchas situaciones, no hay una única respuesta
+                                o
+                                solución. Son varias las posibilidades, cada una con sus beneficios e inconvenientes.
+                                Cada
+                                familia es un mundo y las circunstancias de cada una son diferentes. Por lo tanto, las
+                                soluciones
+                                serán válidas o adecuadas según cada caso en concreto.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="decision-highlight">
+                        <h3>Tener en cuenta el agotamiento del cuidador</h3>
+                        <p>
+                            Muchas personas que cuidan enfermos crónicos, y sobre todo enfermos de demencia, o los que
+                            tienen
+                            la responsabilidad de vigilar, simplemente a las personas mayores que entran en una etapa
+                            que no
+                            es conveniente que estén solos, comienzan a padecer el síndrome de agotamiento del cuidador.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="section contacto">
+            <div class="section-overlay"></div>
+            <div class="container">
+                <h2 class="section-title centered text-white">Dejanos tu consulta</h2>
+                <div class="contacto-grid">
+                    <div class="contacto-form-wrapper">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Correo electrónico*" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono*" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="mensaje" name="mensaje" rows="7" placeholder="Mensaje*"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">ENVIAR CONSULTA</button>
+                        </form>
+                        <div id="form-message" class="form-message"></div>
+                    </div>
+
+                    <div class="contacto-info">
+                        <div class="contacto-item">
+                            <span class="contacto-icon">📞</span>
+                            <h3>03541-496679</h3>
+                        </div>
+
+                        <div class="contacto-item">
+                            <span class="contacto-icon">📱</span>
+                            <h3>0351-153 896 420</h3>
+                        </div>
+                        <div class="contacto-item">
+                            <span class="contacto-icon">✉️</span>
+                            <h3>contacto@luzdevida.com.ar</h3>
+                        </div>
+                        <div class="contacto-item">
+                            <span class="contacto-icon">📍</span>
+                            <h3>Dirección del Geriátrico</h3>
+                        </div>
+
+                        <!-- Mapa -->
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8!2d-64.5!3d-31.4!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDI0JzAwLjAiUyA2NMKwMzAnMDAuMCJX!5e0!3m2!1ses!2sar!4v1234567890"
+                                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">
+                    © 2025 Luz de Vida - Geriátrico. Diseñado por
+                    <a href="https://www.instagram.com/hhhestudios/" target="_blank" rel="noopener noreferrer"
+                        class="footer-link" aria-label="Visitar Instagram de HydraRosario">HydraRosario</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="scroll-top" aria-label="Volver arriba">
+        <span>↑</span>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-prev" id="lightbox-prev" aria-label="Anterior">‹</button>
+        <button class="lightbox-next" id="lightbox-next" aria-label="Siguiente">›</button>
+        <img src="" alt="" id="lightbox-img">
+    </div>
+
+    <!-- Swiper JS (Slider profesional) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- AOS JS (Animaciones on scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JavaScript -->
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Initialize Lucide Icons -->
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
+
+</html>
