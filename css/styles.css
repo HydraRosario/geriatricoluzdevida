@@ -4,7 +4,8 @@
 
 :root {
     /* Colores principales */
-    --color-primary: #4A90A4;
+    --color-primary: #D68D4A;
+    /* Naranja elegante */
     --color-secondary: #F4A261;
     --color-accent: #2A9D8F;
 
@@ -73,7 +74,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(74, 144, 164, 0.5);
+    background: rgba(214, 141, 74, 0.5);
     border-radius: 5px;
 }
 
@@ -233,13 +234,14 @@ button {
 .btn-primary {
     background: var(--color-primary);
     color: var(--color-text-light);
-    box-shadow: 0 4px 15px rgba(74, 144, 164, 0.3);
+    box-shadow: 0 4px 15px rgba(214, 141, 74, 0.3);
 }
 
 .btn-primary:hover {
-    background: #3a7a8a;
+    background: #b57032;
+    /* Naranja más oscuro */
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(74, 144, 164, 0.4);
+    box-shadow: 0 6px 20px rgba(214, 141, 74, 0.4);
 }
 
 .btn-secondary {
@@ -293,11 +295,36 @@ button {
 }
 
 /* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo img {
     height: 60px;
     /* Explicit fixed height */
     width: auto;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.logo-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-heading);
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.9;
 }
 
 .header.scrolled .logo img {
@@ -613,34 +640,41 @@ a:focus-visible {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
 }
 
 .service-item {
     text-align: center;
     transition: var(--transition-normal);
+    background-color: #D68D4A;
+    /* Naranja/marrón cálido de la imagen */
+    padding: var(--spacing-lg) var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 350px;
+    border-radius: var(--border-radius);
+    color: #ffffff;
 }
 
 .service-item:hover {
     transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
 }
 
 
 
 .service-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto var(--spacing-sm);
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--spacing-md);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--color-bg-light);
-    /* Fondo suave para el icono */
-    border-radius: 50%;
+    background: transparent;
     transition: var(--transition-normal);
-    box-shadow: var(--shadow-sm);
-    /* Sombra suave */
 }
 
 .service-item:hover .service-icon {
@@ -655,28 +689,38 @@ a:focus-visible {
 }
 
 .service-icon img {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
 }
 
 /* Lucide Icons Styles */
 .service-icon svg {
     width: 48px;
     height: 48px;
-    stroke: var(--color-primary);
+    stroke: #ffffff;
     stroke-width: 1.5;
     transition: var(--transition-normal);
 }
 
 .service-item:hover .service-icon svg {
-    stroke: var(--color-text-light);
+    stroke: #ffffff;
+    transform: scale(1.1);
 }
 
 .service-title {
-    font-size: 1rem;
-    color: var(--color-text-primary);
-    /* Texto oscuro ahora */
-    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-heading);
+}
+
+.service-description {
+    font-size: 1.1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    opacity: 0.95;
 }
 
 /* ===================================
@@ -1097,7 +1141,7 @@ a:focus-visible {
     right: 30px;
     width: 50px;
     height: 50px;
-    background: rgba(74, 144, 164, 0.6);
+    background: rgba(214, 141, 74, 0.6);
     /* Color primario con transparencia */
     color: var(--color-text-light);
     border-radius: 50%;
@@ -1120,9 +1164,9 @@ a:focus-visible {
 }
 
 .scroll-top:hover {
-    background: rgba(74, 144, 164, 0.9);
+    background: rgba(214, 141, 74, 0.9);
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(74, 144, 164, 0.4);
+    box-shadow: 0 6px 20px rgba(214, 141, 74, 0.4);
 }
 
 /* ===================================

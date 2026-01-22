@@ -9,7 +9,7 @@ class HeroSlider {
         this.totalSlides = this.slides.length;
         this.indicators = document.getElementById('slider-indicators');
         this.autoPlayInterval = null;
-        this.autoPlayDelay = 3000; // 3 segundos (Más rápido)
+        this.autoPlayDelay = 4000; // 6 segundos (Más lento)
 
         this.init();
     }
