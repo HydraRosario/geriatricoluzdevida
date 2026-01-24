@@ -293,11 +293,36 @@ button {
 }
 
 /* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .logo img {
     height: 60px;
     /* Explicit fixed height */
     width: auto;
     filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.logo-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    font-family: var(--font-heading);
+}
+
+.logo-subtitle {
+    font-size: 0.85rem;
+    font-weight: 400;
+    opacity: 0.9;
 }
 
 .header.scrolled .logo img {
