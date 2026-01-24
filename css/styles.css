@@ -647,7 +647,7 @@ a:focus-visible {
 .service-item {
     text-align: center;
     transition: var(--transition-normal);
-    background-color: #D68D4A;
+    background-color: #aad7d2;
     /* Naranja/marrón cálido de la imagen */
     padding: var(--spacing-lg) var(--spacing-md);
     display: flex;
@@ -657,11 +657,18 @@ a:focus-visible {
     min-height: 350px;
     border-radius: var(--border-radius);
     color: #ffffff;
+    /* Decoración solicitada: Borde Naranja */
+    border: 3px solid #fbc891;
+    position: relative;
+    overflow: hidden;
 }
 
 .service-item:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 15px 30px rgba(251, 200, 145, 0.4);
+    /* Sombra naranja suave */
+    border-color: #ffffff;
+    /* Cambio sutil al hover */
 }
 
 
@@ -1234,4 +1241,57 @@ a:focus-visible {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* ===================================
+   WHATSAPP CTA
+   =================================== */
+
+.whatsapp-cta {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: var(--color-text-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    height: 100%;
+}
+
+.whatsapp-cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.whatsapp-cta p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 400px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;
+    padding: 15px 35px;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.btn-whatsapp svg {
+    width: 24px;
+    height: 24px;
 }
