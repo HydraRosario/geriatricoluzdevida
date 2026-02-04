@@ -4,21 +4,29 @@
 
 :root {
     /* Colores principales */
+    /* Colores principales */
     --color-primary: #D68D4A;
     /* Naranja elegante */
-    --color-secondary: #F4A261;
-    --color-accent: #2A9D8F;
+    --color-secondary: #aad7d2;
+    /* Cian Pastel (Bubbles) */
+    --color-accent: #264653;
+    /* Dark Teal (Contrast) */
 
     /* Colores de texto */
-    --color-text-primary: #333333;
-    --color-text-secondary: #666666;
-    --color-text-paragraph: #444444;
+    --color-text-primary: #264653;
+    /* Dark Teal for headings - elegant contrast */
+    --color-text-secondary: #5e6d75;
+    /* Muted teal/gray for subtitles */
+    --color-text-paragraph: #4A4A4A;
+    /* Softer gray for body text */
     /* Added for decision text */
     --color-text-light: #FFFFFF;
 
     /* Colores de fondo */
-    --color-bg-white: #FFFFFF;
-    --color-bg-light: #F8F9FA;
+    --color-bg-white: #FAF7F5;
+    /* Warm White / Cream */
+    --color-bg-light: #fffcf9;
+    /* Lighter Cream */
     --color-bg-dark: #2C3E50;
 
     /* Tipografía */
@@ -165,7 +173,10 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(38, 70, 83, 0.75);
+    /* Dark Teal tint */
+    backdrop-filter: sepia(10%);
+    /* Subtle warmth */
     z-index: 1;
 }
 
@@ -264,8 +275,8 @@ button {
     top: 0;
     left: 0;
     width: 100%;
-    /* Static: Black background with transparency */
-    background: rgba(0, 0, 0, 0.7);
+    /* Static: Cyan background (same as service bubbles) */
+    background: rgba(170, 215, 210, 0.95);
     box-shadow: var(--shadow-sm);
     z-index: 1000;
     padding: 15px 0;
@@ -275,14 +286,14 @@ button {
 
 .header.scrolled {
     /* No visual changes on scroll */
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(170, 215, 210, 0.95);
     box-shadow: var(--shadow-sm);
     padding: 15px 0;
 }
 
 .nav-link {
-    color: #ffffff;
-    /* Always white */
+    color: var(--color-text-primary);
+    /* Dark text for contrast against cyan */
     font-weight: 700;
     position: relative;
     padding: 5px 0;
@@ -291,7 +302,7 @@ button {
 }
 
 .header.scrolled .nav-link {
-    color: #ffffff;
+    color: var(--color-text-primary);
 }
 
 /* Logo Styles */
@@ -311,7 +322,7 @@ button {
 .logo-text {
     display: flex;
     flex-direction: column;
-    color: #ffffff;
+    color: var(--color-text-primary);
 }
 
 .logo-title {
@@ -361,14 +372,14 @@ button {
 .hamburger-line {
     width: 25px;
     height: 3px;
-    background: #ffffff;
-    /* Always white */
+    background: var(--color-text-primary);
+    /* Dark hamburger menu */
     transition: background-color 0.3s ease;
     border-radius: 2px;
 }
 
 .header.scrolled .hamburger-line {
-    background: #ffffff;
+    background: var(--color-text-primary);
 }
 
 /* ===================================
@@ -411,7 +422,10 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(to bottom, rgba(38, 70, 83, 0.3), rgba(38, 70, 83, 0.8));
+    /* Dark Teal Gradient */
+    backdrop-filter: sepia(20%);
+    /* Slight sepia to warm up images */
 }
 
 .slide-content {
@@ -647,8 +661,8 @@ a:focus-visible {
 .service-item {
     text-align: center;
     transition: var(--transition-normal);
-    background-color: #aad7d2;
-    /* Naranja/marrón cálido de la imagen */
+    background-color: var(--color-secondary);
+    /* Cyan from variables */
     padding: var(--spacing-lg) var(--spacing-md);
     display: flex;
     flex-direction: column;
@@ -656,19 +670,20 @@ a:focus-visible {
     justify-content: center;
     min-height: 350px;
     border-radius: var(--border-radius);
-    color: #ffffff;
-    /* Decoración solicitada: Borde Naranja */
-    border: 3px solid #fbc891;
+    color: var(--color-text-paragraph);
+    /* Dark text for readability */
+    border: 3px solid var(--color-primary);
+    /* Primary Orange Border */
     position: relative;
     overflow: hidden;
 }
 
 .service-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(251, 200, 145, 0.4);
-    /* Sombra naranja suave */
-    border-color: #ffffff;
-    /* Cambio sutil al hover */
+    box-shadow: 0 15px 30px rgba(214, 141, 74, 0.2);
+    /* Soft orange shadow */
+    border-color: var(--color-accent);
+    /* Teal border on hover for elegance */
 }
 
 
@@ -680,19 +695,22 @@ a:focus-visible {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.5);
+    /* Semi-transparent white backing for icon */
+    border-radius: 50%;
+    /* Circular backing */
     transition: var(--transition-normal);
 }
 
 .service-item:hover .service-icon {
     background: var(--color-primary);
-    /* Color primario al hover */
+    /* Orange on hover */
     transform: scale(1.05);
 }
 
 .service-item:hover .service-icon img {
     filter: brightness(0) invert(1);
-    /* Icono blanco al hover */
+    /* White icon on hover */
 }
 
 .service-icon img {
@@ -704,19 +722,22 @@ a:focus-visible {
 .service-icon svg {
     width: 48px;
     height: 48px;
-    stroke: #ffffff;
+    stroke: var(--color-accent);
+    /* Dark Teal Icon initially */
     stroke-width: 1.5;
     transition: var(--transition-normal);
 }
 
 .service-item:hover .service-icon svg {
     stroke: #ffffff;
+    /* White on hover */
     transform: scale(1.1);
 }
 
 .service-title {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: var(--color-text-primary);
+    /* Dark Teal Title */
     font-weight: 700;
     margin-bottom: var(--spacing-md);
     font-family: var(--font-heading);
@@ -724,7 +745,8 @@ a:focus-visible {
 
 .service-description {
     font-size: 1.1rem;
-    color: #ffffff;
+    color: var(--color-text-paragraph);
+    /* Dark Grey text */
     line-height: 1.6;
     margin: 0;
     opacity: 0.95;

@@ -196,18 +196,43 @@ function initGallery() {
     // Simulando 30 imágenes para demostrar la paginación de 10 en 10
     // Array de imágenes reales encontradas en el sistema
     const galleryImages = [
-        // General
-        'images/general/confort-instalaciones.jpg',
-        'images/general/confort.jpg',
-        'images/general/contacto.jpg',
-        'images/general/nuestros-servicios.jpg',
-        'images/general/quienes-somos.jpg',
-        'images/general/toma-de-decision.jpg',
-        // Slider
-        'images/slider/slide-1-real.png',
-        'images/slider/slide-2-real.png',
-        'images/slider/slide-3-real.png',
-        'images/slider/slide-4-real.png'
+        'images/gallery/1000248224.jpg',
+        'images/gallery/1000248230.jpg',
+        'images/gallery/1000249138.jpg',
+        'images/gallery/1000249140.jpg',
+        'images/gallery/1000249146.jpg',
+        'images/gallery/1000354912.jpg',
+        'images/gallery/1000354915.jpg',
+        'images/gallery/1000354918.jpg',
+        'images/gallery/1000354921.jpg',
+        'images/gallery/1000354936.jpg',
+        'images/gallery/1000363737.jpg',
+        'images/gallery/1000363746.jpg',
+        'images/gallery/1000363767.jpg',
+        'images/gallery/1000375935.jpg',
+        'images/gallery/1000409746.jpg',
+        'images/gallery/1000448666.jpg',
+        'images/gallery/1000462741.jpg',
+        'images/gallery/IMG_20240229_143102065.jpg',
+        'images/gallery/IMG_20240229_143136584.jpg',
+        'images/gallery/IMG_20240229_143145711.jpg',
+        'images/gallery/IMG_20240229_143204592.jpg',
+        'images/gallery/IMG_20240229_175117898.jpg',
+        'images/gallery/IMG_20240229_175151298.jpg',
+        'images/gallery/IMG_20240229_175214046.jpg',
+        'images/gallery/IMG_20240229_175234598.jpg',
+        'images/gallery/IMG_20240229_175300181.jpg',
+        'images/gallery/IMG_20240229_184806556.jpg',
+        'images/gallery/IMG_20240229_184814105.jpg',
+        'images/gallery/IMG_20240229_193848573.jpg',
+        'images/gallery/IMG_20240301_193901195.jpg',
+        'images/gallery/IMG_20240301_194109598.jpg',
+        'images/gallery/IMG_20240301_211742323.jpg',
+        'images/gallery/IMG_20240301_211905178.jpg',
+        'images/gallery/IMG_20240304_125054837.jpg',
+        'images/gallery/IMG_20240304_125109174.jpg',
+        'images/gallery/IMG_20240305_185304739.jpg',
+        'images/gallery/IMG_20240305_205851643.jpg'
     ];
 
     let currentIndex = 0;
