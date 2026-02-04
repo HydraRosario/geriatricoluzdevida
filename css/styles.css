@@ -653,12 +653,17 @@ a:focus-visible {
 }
 
 .services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: var(--spacing-lg);
 }
 
 .service-item {
+    flex: 0 1 calc(33.333% - var(--spacing-lg));
+    /* 3 columns minus gap */
+    min-width: 300px;
+    /* Prevent too small items */
     text-align: center;
     transition: var(--transition-normal);
     background-color: var(--color-secondary);

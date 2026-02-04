@@ -11,7 +11,12 @@
     }
 
     .services-grid {
-        grid-template-columns: repeat(2, 1fr);
+        /* Flexbox handles wrapping */
+    }
+
+    .service-item {
+        flex: 0 1 calc(50% - var(--spacing-lg));
+        /* 2 columns on tablet */
     }
 
     .slide-title {
@@ -156,7 +161,13 @@
     }
 
     .services-grid {
-        grid-template-columns: 1fr;
+        /* Flexbox handles this, but we ensure full width */
+        gap: var(--spacing-md);
+    }
+
+    .service-item {
+        flex: 0 1 100%;
+        /* Full width on mobile */
     }
 
     .service-icon {
