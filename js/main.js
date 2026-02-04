@@ -207,12 +207,9 @@ function initGallery() {
         'images/gallery/1000354921.jpg',
         'images/gallery/1000354936.jpg',
         'images/gallery/1000363737.jpg',
-        'images/gallery/1000363746.jpg',
-        'images/gallery/1000363767.jpg',
-        'images/gallery/1000375935.jpg',
-        'images/gallery/1000409746.jpg',
+
         'images/gallery/1000448666.jpg',
-        'images/gallery/1000462741.jpg',
+
         'images/gallery/IMG_20240229_143102065.jpg',
         'images/gallery/IMG_20240229_143136584.jpg',
         'images/gallery/IMG_20240229_143145711.jpg',
